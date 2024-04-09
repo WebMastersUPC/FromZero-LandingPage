@@ -117,7 +117,7 @@ li a{
 /*Estilos de la Pagina*/
 
 .sobre-nosotros{
-    background-image: url(../assets/about_background.jpeg);
+    background-image: url(../images/about_background.jpeg);
     background-size: cover;
     background-position: center;
     color: white;
