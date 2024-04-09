@@ -25,7 +25,13 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 body::-webkit-scrollbar {
     width: 0.5rem;
 }
@@ -107,6 +113,7 @@ body::-webkit-scrollbar-thumb{
     font-size: var(--md);
     font-weight: bold;
 }
+
 @media (max-width: 640px){
     .menu{
         display: block;
@@ -120,12 +127,6 @@ body::-webkit-scrollbar-thumb{
 }
 
 /*Estilos del main-page*/
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .main-page-first-article{
     display: flex;
@@ -174,7 +175,10 @@ main{
     font-size: var(--md);
     font-weight: bold;
 }
-
+.main-page-subtitle-article{
+    font-weight: bold;
+    font-size: 25px;
+}
 .main-page-second-article{
     display: flex;
     flex-direction: column;
@@ -182,54 +186,103 @@ main{
     align-items: center;
     padding: 20px;
     gap: 20px;
-    margin: 30px 0px;
-    width: 100%;
-    height: 70%;
+    margin: 30px 0;
+    width: 75%;
+    height: 30%;
+    background-color: #F4F4F4;
 }
-
-.main-page-second-article div:first-child{
+.second-article-part-3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     height: 50%;
 }
-
-.main-page-second-article div img{
-    width: 100%;
-    height: 100%;
+.article-description{
+    font-weight: 400;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #606060;
+    text-align: center;
 }
-
-.main-page-second-article div:last-child{
+.secont-article-part-3-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 50%;
+    height: 50%;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #606060;
+}
+.second-article-part-3-images img{
+    width: 70%;
+    height: 70%;
+}
+.second-article-part-3-images{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+    width: 50%;
+    height: 100%;
+}
+.secont-article-part-3-description div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     width: 100%;
     height: 50%;
 }
-
-.main-page-second-article div:last-child h1{
-    font-family: 'Poppins';
-    font-weight: bold;
-    font-size: 35px;
+.main-page-featuresprojects{
+    width: 100%;
+    height: 30%;
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #F8F8F8;
 }
-
-.main-page-second-article div:last-child p{
-    font-family: 'Open Sans';
-    font-size: 20px;
-    color: #606060;
+.main-page-featuresprojects-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    margin: 30px 0;
+    width: 70%;
 }
-
-.main-page-second-article div:last-child button{
-    background-color: var(--btn-color-blue);
-    border: none;
-    color: var(--white);
-    height: 42px;
-    width: 150px;
-    cursor: pointer;
-    font-size: var(--md);
-    font-weight: bold;
+.featuresprojects-examples{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
 }
-
+.featuresprojects-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--lg);
+    color: #B864F3;
+    border: #EFECEC 1px solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px #48529944;
+    padding: 20px;
+    gap: 10px;
+}
+.featuresprojects-content img{
+    width: 90%;
+    height: 30vh;
+}
+.carousel-image{
+    transition: opacity 0.5s ease-in-out;
+}
+.carousel-image.fade-out{
+    opacity: 0;
+}
 /*Estilos del footer*/
 .footer{
     display: flex;
