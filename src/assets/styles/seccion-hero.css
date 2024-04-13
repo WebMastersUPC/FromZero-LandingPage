@@ -1,0 +1,63 @@
+.animated-text {
+    font-size: 50px;
+    font-weight: 600;
+    min-width: 280px;
+    padding-top: 40px;
+    margin-left: 65px;
+}
+
+.animated-text span {
+    position: relative;
+    color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-text-stroke: 0.3vw #0072FF;
+    text-shadow: -2px 0 0 #0072FF, 0 2px 0 #0072FF, 2px 0 0 #0072FF, 0 -2px 0 #0072FF;
+    transition: clip-path 1s; 
+}
+
+.animated-text span:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.animated-text span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-right: 2px solid #0072FF;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0%, 10%, 100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+
+
+.hero-description{
+    font-size: 20px;
+    color: #606060;
+}
+.seccion-hero{
+    background-color: #F4F4F4;
+    padding-top: 60px; 
+    padding-bottom: 60px;
+}
+.button-hero {
+    background-color: #3554BC;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 210px;
+    height: 60px;
+    font-weight: 600;
+    margin-top: 120px; 
+}
