@@ -3,42 +3,20 @@
     font-weight: 600;
     min-width: 280px;
     padding-top: 40px;
-    margin-left: 65px;
+    margin-left: 30px;
 }
 
-.animated-text span {
-    position: relative;
-    color: transparent;
-    text-transform: uppercase;
-    cursor: pointer;
-    -webkit-text-stroke: 0.3vw #0072FF;
-    text-shadow: -2px 0 0 #0072FF, 0 2px 0 #0072FF, 2px 0 0 #0072FF, 0 -2px 0 #0072FF;
-    transition: clip-path 1s; 
-}
-
-.animated-text span:hover {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.animated-text span::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.text {
     border-right: 2px solid #0072FF;
+    white-space: nowrap;
     overflow: hidden;
-    animation: animate 6s linear infinite;
+    animation: blink-caret .75s step-end infinite;
+    color: #0072FF;
 }
 
-@keyframes animate {
-    0%, 10%, 100% {
-        width: 0;
-    }
-    70%, 90% {
-        width: 100%;
-    }
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #0072FF; }
 }
 
 

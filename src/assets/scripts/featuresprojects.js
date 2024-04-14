@@ -50,3 +50,24 @@ h2.forEach( ( cadaH2 , i )=>{
         bloque[i].classList.add('activo')
     })
 })
+
+const textElement = document.querySelector('.text');
+const textToWrite = textElement.textContent;
+let index = 0;
+let isDeleting = false;
+
+function writeDeleteText() {
+    textElement.textContent = textToWrite.slice(0, index);
+
+    if (index === textToWrite.length) {
+        isDeleting = true;
+    } else if (index === 0) {
+        isDeleting = false;
+    }
+
+    index = isDeleting ? index - 1 : index + 1;
+
+    setTimeout(writeDeleteText, isDeleting ? 100 : 200);
+}
+
+writeDeleteText();
