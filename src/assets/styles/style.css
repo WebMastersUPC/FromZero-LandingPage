@@ -326,8 +326,6 @@ body::-webkit-scrollbar-thumb{
     font-family: 'Open Sans';
     color: #545c5a;
 }
-
-/* Sección de Preguntas frecuentes */
 .container-preguntas {
     margin-top: 5vh;
     justify-content: center;
@@ -400,4 +398,79 @@ body::-webkit-scrollbar-thumb{
     .acordeon .bloque.activo .contenido {
         height: 7.5em;
     }
+}
+.clients-feedback{
+    margin-bottom: 2rem;
+}
+.subtitle-about-us{
+    font-family: 'Poppins';
+    text-align: center;
+    color: #404040;
+    margin-top: 2rem;
+}
+
+.testimony-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.feedback{
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    margin-right: 20rem;
+}
+
+.feedback-card p{
+    margin: 0;
+}
+.feedback .feedback-card{
+    width: 32vh;
+    height: 45vh;
+    background-color: #D9D9D9;
+    color: var(--black);
+    font-family: 'Open Sans';
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.feedback-card .feedback-text{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 25px 0 25px;
+}
+.client-profile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    background-color: #F8F8F8;
+    padding: 10px 0;
+}
+.client-profile img{
+    height: 60px;
+    width: 60px;
+}
+
+.client-img img{
+    height: 70px;
+    width: 70px;
+    filter:drop-shadow(rgba(0, 0, 0, 0.183) 2px 2px 2px)
+}
+
+.stars{
+    margin:0.5rem;
+    color: #FFD43B
 }
