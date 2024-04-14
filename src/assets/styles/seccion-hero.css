@@ -1,0 +1,41 @@
+.animated-text {
+    font-size: 50px;
+    font-weight: 600;
+    min-width: 280px;
+    padding-top: 40px;
+    margin-left: 30px;
+}
+
+.text {
+    border-right: 2px solid #0072FF;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink-caret .75s step-end infinite;
+    color: #0072FF;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #0072FF; }
+}
+
+
+
+.hero-description{
+    font-size: 20px;
+    color: #606060;
+}
+.seccion-hero{
+    background-color: #F4F4F4;
+    padding-top: 60px; 
+    padding-bottom: 60px;
+}
+.button-hero {
+    background-color: #3554BC;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 210px;
+    height: 60px;
+    font-weight: 600;
+    margin-top: 120px; 
+}
