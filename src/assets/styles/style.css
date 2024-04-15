@@ -427,7 +427,6 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     flex-wrap: wrap;
     padding: 40px;
-    margin-right: 20rem;
 }
 
 .feedback-card p{
@@ -444,6 +443,7 @@ body::-webkit-scrollbar-thumb{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin:1rem 3rem;
 }
 .feedback-card .feedback-text{
     font-family: 'Open Sans';
