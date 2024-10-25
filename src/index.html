@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebMaster - Conectando Empresas y Desarrolladores Freelance</title>    
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
-    <meta name="description" content="WebMaster es la plataforma que conecta a empresas en búsqueda de soluciones de software con desarrolladores freelance dispuestos a trabajar en proyectos.">
+    <title>FromZero - Conectando Empresas y Desarrolladores Freelance</title>    
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
+    <meta name="description" content="From Zero es la plataforma que conecta a empresas en búsqueda de soluciones de software con desarrolladores freelance dispuestos a trabajar en proyectos.">
     <meta name="keywords" content="plataforma de contratación, desarrolladores freelance, software a medida, proyectos de desarrollo, conectar empresas con desarrolladores">
-    <meta name="author" content="Equipo de Desarrollo de WebMaster">
+    <meta name="author" content="Equipo de Desarrollo de From Zero">
     <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
     <link rel="stylesheet" href="./assets/styles/seccion-hero.css">
     <link rel="stylesheet" href="./assets/styles/seccion-membresia.css">
@@ -29,8 +29,13 @@
         <header>
             <div class="navbar">
                 <div class="logo">
-                    <a href="./main-page.html">
-                        <img src="./assets/images/logo_edit.png" alt="logo">
+                    <a href="#hero">
+                        <div class="logo-container">
+                            <img src="./assets/images/logo_from_zero.png" alt="logo">
+                            <img src="./assets/images/letras_from_zero.png" alt="logo" style="width: 100px; height: 70px;">
+                            
+                        </div>
+                       
                     </a>
                 </div>
 
@@ -64,10 +69,10 @@
         <script src="assets/scripts/index.js"></script>
     <main>
         <!--Seccion hero-->
-        <div class="container-fluid seccion-hero" >
+        <div class="container-fluid seccion-hero" id="hero">
             <div class="row h-100">
                 <div class="col animated-text">
-                    <h1 class="animated-text">
+                    <h1 class="animated-text little-on-small">
                         La plataforma para tus <br>
                         <span class="text">sueños digitales</span>
                     </h1>
@@ -85,7 +90,7 @@
                 </div>
         
                 <div class="col d-flex justify-content-center align-items-center">
-                    <img src="./assets/images/img-articulo 1.png" alt="imagen hero" class="img-fluid">
+                    <img src="./assets/images/img-articulo 1.png" alt="imagen hero" class="img-fluid hide-on-small">
                 </div>
             </div>
         </div>
@@ -97,8 +102,8 @@
                 <p>En From Zero, te proporcionamos todas las herramientas y servicios necesarios para que no requieras buscar en ningún otro lugar a la hora de crear tu página web. No solo ofrecemos estos servicios, sino que también nos centramos en garantizar su eficiencia y rapidez.</p>
             </div>
             <div class="second-article-part-3">
-                <div class="second-article-part-3-images">
-                    <img src="./assets/images/feature-image.png" alt="">
+                <div class="second-article-part-3-images hide-on-small">
+                    <img src="./assets/images/feature-image.png" alt="" class="hide-on-small">
                 </div>
                 <div class="secont-article-part-3-description">
                     <div>
@@ -194,7 +199,7 @@
                 </div>
                 <div class="feedback-card">
                     <div class="feedback-text">
-                        <p>Usamos WebMaster para encontrar un desarrollador y, aunque tomó tiempo, encontramos a alguien que cumplió nuestras expectativas. La comunicación fue fluida y el proyecto se completó como acordamos. Consideraremos usar WebMaster en el futuro</p>
+                        <p>Usamos WebMaster para buscar un desarrollador y encontramos a alguien que cumplió nuestras expectativas. El proyecto se completó como acordamos y sin contratiempos. Consideraremos usar WebMaster en el futuro</p>
                     </div>
                     <div class="client-profile">
                         <div>
@@ -220,12 +225,12 @@
         
          <!--Seccion Membresia Freelancer-->
         <div class="container-fluid background-plans" id="membresia">
-            <div class="d-flex justify-content-center align-items-center space-up background-plans">
+            <div class="d-flex justify-content-center align-items-center mt-5 background-plans">
                 <h1>Membresia-Freelancer</h1>
             </div>
             <div class="d-flex justify-content-center align-items-center background-plans">
-                <div class="row row-cols-1 row-cols-md-2 g-4 space-down  ">
-                    <div class="col">
+                <div class="row row-cols-1 row-cols-md-2 g-4 space-down">
+                    <div class="col mb-5">
                         <h1 class="text-title-plans">Free</h1>
                         <div class="card h-100">
                             <div class="text-center seccion-up">
@@ -238,7 +243,7 @@
                                 <p class="card-text">
                                     <ul>
                                         <li>
-                                            <i class="bi bi-check-circle morado-oscuro"> Limite de 3 pstulaciones simultaneamente</i>
+                                            <i class="bi bi-check-circle morado-oscuro"> Limite de 3 postulaciones simultaneamente</i>
                                         </li>
                                         <li>
                                             <i class="bi bi-check-circle morado-oscuro"> Maximo desarrolla 1 proyecto a la vez</i>
@@ -251,7 +256,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col mb-5">
                         <h1 class="text-title-plans">Premium</h1>
                         <div class="card h-100">
                             <div class="text-center seccion-up">
@@ -290,12 +295,12 @@
             </div>
             
             <!--Seccion Empresarios-->
-            <div class="d-flex justify-content-center align-items-center space-up">
+            <div class="d-flex justify-content-center align-items-center">
                 <h1>Membresia-Empresario</h1>
             </div>
             <div class="d-flex justify-content-center align-items-center ">
                 <div class="row row-cols-1 row-cols-md-2 g-4 space-down  ">
-                    <div class="col">
+                    <div class="col mb-5">
                         <h1 class="text-title-plans">Free</h1>
                         <div class="card h-100">
                             <div class="text-center seccion-up">
@@ -321,7 +326,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col mb-5">
                         <h1 class="text-title-plans">Premium</h1>
                         <div class="card h-100">
                             <div class="text-center seccion-up">
