@@ -68,12 +68,6 @@ a {
     font-size: 1rem;
 }
 
-a:hover {
-    color: var(--accent-color);
-    font-size: 1.5rem;
-    transition: 0.7s;
-}
-
 .progress-bar{
     position: fixed;
     width: 100%;
@@ -119,9 +113,17 @@ header {
 }
 
 .navbar .logo a img {
-    width: 50px;
+    width: 80px;
     height: auto;
+    margin-left: 10px;
+}
 
+.logo-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
 }
 
 .navbar .links {
@@ -140,12 +142,6 @@ header {
     border-radius: 8px;
     padding: 4px;
     display: inline-block; 
-}
-
-
-.navbar .links li a:hover {
-    background-color: var(--hover-sky-blue);
-    border: 1px solid var(--very-light-purple);
 }
 
 .navbar.links li:first-child a:hover,
@@ -531,8 +527,9 @@ header {
 .testimony-container{
     display:flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: self-start;
     flex-direction: column;
+    
 }
 
 .feedback{
@@ -549,7 +546,7 @@ header {
 }
 .feedback .feedback-card{
     width: 45vh;
-    height: 60vh;
+    height: 70%;
     background-color: #D9D9D9;
     color: var(--black);
     font-family: 'Open Sans';
@@ -558,7 +555,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin:1rem 3rem;
+    margin:3rem 3rem;
 }
 .feedback-card .feedback-text{
     font-family: 'Open Sans';
@@ -567,7 +564,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 25px 25px 0 25px;
+    padding: 25px;
 }
 .client-profile{
     width: 100%;
